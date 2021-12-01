@@ -1,13 +1,8 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   
-  <title>tURL Shortner</title>
+  <title>tURL Shortener</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -20,7 +15,7 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <div class="jumbotron text-center">
-  <h1> tURL Shortner</h1> 
+  <h1> tURL Shortener</h1> 
  <br> <br>
   <form action = " " method = "post">
     <div class="input-group">
@@ -71,7 +66,7 @@ catch(Exception $e)
 <div id="about" class="container-fluid">
   <div >
     <div class="col-sm-8">
-      <h2>About tURL Shortner</h2>
+      <h1>About tURL Shortener</h1>
       <h4>
       tURL Shortner application uses the LAMP (Linux, Apache, MySQL and PHP) stack technology to shorten long URLs to short URLs. Short URLS are easier to share via emails or post on interactive platforms. 
       
