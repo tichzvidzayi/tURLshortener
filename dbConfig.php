@@ -1,10 +1,11 @@
 <?php
 // Database configuration
-$DB_host = "localhost" ;
-$DB_username = "elephant" ;
-$DB_password  = "@Watermelon" ;
-$DB_name = "turlshortner" ;
-
+/*
+	$DB_host = "localhost" ;
+	$DB_username = "your user name" ;   //Best not to upload credentials and any forms of tokens
+	$DB_password  = "your password" ;
+	$DB_name = "turlshortner" ;
+*/
 // Create database connection
 try{
     {
