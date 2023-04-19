@@ -50,26 +50,18 @@ catch(Exception $e)
  {   
    echo $e->getMessage();
   }
-}
-?> 
-
-
+}?> 
  </p>
-   
-  
 </div>
-
 <div id="about" class="container-fluid">
   <div >
     <div class="col-sm-8">
       <h1>About tURL Shortener</h1>
       <h4>
       tURL Shortner application uses the LAMP (Linux, Apache, MySQL and PHP) stack technology to shorten long URLs to short URLs. Short URLS are easier to share via emails or post on interactive platforms. 
-      
       </h4>
-      
     </div>
-    
+
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo"></span>
