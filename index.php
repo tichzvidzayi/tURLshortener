@@ -28,17 +28,22 @@
   
   <p> 
 <?php
-$errmsg =" "; $urlfail =false;
+
+$errmsg =" ";
+$urlfail =false;
+    
 if (isset($_POST['submit']))
 {
-require_once "dbConfig.php" ;
-require_once "Shortener.class.php";
-$shortener = new Shortener($db);              //creating the PDO object
-$longURL = htmlentities($_POST['longurl']);    //assign long url to longURL
-$_POST = array();                              // Clear array /reset _POST
-$shortURL_Prefix = 'http://localhost/';       // short url prefix
+  require_once "dbConfig.php" ;
+  require_once "Shortener.class.php";
+  
+  $shortener = new Shortener($db);              //creating the PDO object
+  $longURL = htmlentities($_POST['longurl']);    //assign long url to longURL
+  $_POST = array();                              // Clear array /reset _POST
+  $shortURL_Prefix = 'http://localhost/';       // short url prefix
 try
-{// Generate short code 
+{
+  // Generate short code 
     $shortCode = $shortener->urlToShortCode($longURL);
     $shortURL = $shortURL_Prefix.$shortCode;
     echo " You shortened ". $longURL."<br> to:<h1>" .$shortURL ."</h1>";
