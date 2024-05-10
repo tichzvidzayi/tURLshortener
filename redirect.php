@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require_once 'dbConfig.php';
 require_once 'Shortener.class.php';
@@ -6,15 +6,10 @@ require_once 'Shortener.class.php';
 $shortener = new Shortener($db);
 $shortCode = $_GET['c'];
 
-try
-{
+try {
     $url = $shortener->shortCodeToUrl($shortCode);   //retrieve long url
-    header("Location: " .$url);
+    header("Location: " . $url);
     exit;
-}
-    catch(Exception $e)
-{
+} catch (Exception $e) {
     echo $e->getMessage();
 }
-
-?> 

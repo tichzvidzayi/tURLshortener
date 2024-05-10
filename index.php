@@ -18,7 +18,7 @@
 
   <div class="jumbotron text-center">
     <h1> tURL Shortener</h1>
-     <br>
+    <br>
     <form action="GET" method="post">
       <div class="input-group">
         <input type="text" class="form-control" name="longurl" size="50" placeholder="Long URL" required>

@@ -7,10 +7,9 @@
 	$DB_name = "turlshortner" ;
 */
 // Create database connection
-try{
-    {
+try { {
 		$db = new PDO("mysql:host=$DB_host;dbname=$DB_name", $DB_username, $DB_password);
 	}
-}catch(PDOException $e){
-    echo "Oop database connection failed: " . $e->getMessage();
+} catch (PDOException $e) {
+	echo "Oop database connection failed: " . $e->getMessage();
 }
